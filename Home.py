@@ -9,6 +9,10 @@ st.set_page_config(
 )
 
 def display_Home_panel():
+    #header image
+    st.image("https://i.postimg.cc/DfdZgK9y/Screenshot-2025-01-11-at-6-16-28-PM.png", use_container_width=True)
+    st.markdown("---")
+
     st.title("Welcome to The King Application!")
     st.write("Here's some motivation as you enter the IB Testing Application process! Don't forget to look at the baby animals they're amazing!!! 🥳 ")
     
