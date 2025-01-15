@@ -4,6 +4,10 @@ import random
 import io
 
 def display_Test_Date_1_panel():
+    #header image
+    st.image("https://i.postimg.cc/4dT1D9X9/b309757a-7f9d-4052-a70f-9497b952fc8b-1.jpg", use_container_width=True)
+    st.markdown("---")
+
     st.title("Test Date 1 Page")
 
     def process_data(df, date_column, date_input):

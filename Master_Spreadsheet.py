@@ -3,6 +3,9 @@ import pandas as pd
 import io
 
 def display_Master_Spreadsheet_panel():
+    #header image
+    st.image("https://i.postimg.cc/PqSxjbMp/image.jpg", use_container_width=True)
+    st.markdown("---")
     st.title("Master Data Upload")
 
     # Initialize session state for master_df and raw_file

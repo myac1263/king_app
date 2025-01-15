@@ -6,9 +6,6 @@ import Test_Date_1
 import Test_Date_2
 import Master_Spreadsheet
 
-
-
-
 # Initialize session state variables if not already set
 if "logged_in" not in st.session_state:
    st.session_state.logged_in = False
@@ -16,7 +13,6 @@ if "page" not in st.session_state:
    st.session_state.page = "login"
 if "role" not in st.session_state:
    st.session_state.role = None  # Default role if not logged in
-
 
 # Function to show the login form
 def show_login_form():
@@ -36,12 +32,10 @@ def show_login_form():
            if username in users:
                st.session_state.role = users[username]["role"]
 
-
            st.session_state.page = "home"  # Redirect to home page
            st.rerun()  # Force rerun to reflect the new state
        else:
            st.error("Invalid username or password.")
-
 
 #Logout Button
 def show_logout_button():
@@ -51,7 +45,6 @@ def show_logout_button():
        st.session_state.page = "login"  # Redirect to login page
        st.session_state.role = None  # Clear the user role
        st.rerun()
-
 
 # Main app logic
 if not st.session_state.logged_in:

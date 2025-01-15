@@ -4,6 +4,9 @@ from login import create_user
 USER_ROLES = {}  # Simulating user roles
 
 def display_admin_panel():
+    #header image
+    st.image("https://i.postimg.cc/d0g28Thf/image.jpg", use_container_width=True)
+    st.markdown("---")
 
     st.subheader("Admin Panel: Create new users and manage roles")
     new_user = st.text_input("New Username", key="new_user")
