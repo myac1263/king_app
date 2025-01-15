@@ -44,4 +44,4 @@ def login(username, password):
         stored_hash = users[username]["password"].encode('utf-8')  # Get the stored hash as bytes
         if bcrypt.checkpw(password.encode('utf-8'), stored_hash):
             return True
-    return False
+    return False 
