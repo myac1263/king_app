@@ -5,7 +5,7 @@ import io
 
 def display_Test_Date_2_panel():
     #header image
-    st.image("https://i.postimg.cc/LXrm9xgX/dog.jpg", use_container_width=True)
+    st.image("https://i.imgur.com/L5T4Y9R.jpeg", use_container_width=True)
     st.markdown("---")
 
     st.title("Test Date 2 Page")
