@@ -10,26 +10,26 @@ st.set_page_config(
 
 def display_Home_panel():
     #header image
-    st.image("https://i.postimg.cc/DfdZgK9y/Screenshot-2025-01-11-at-6-16-28-PM.png", use_container_width=True)
+    st.image("https://i.imgur.com/FZmzr98.jpeg", use_container_width=True)
     st.markdown("---")
 
     st.title("Welcome to The King Application!")
     st.write("Here's some motivation as you enter the IB Testing Application process! Don't forget to look at the baby animals they're amazing!!! 🥳 ")
     
     col1, col2, col3, col4 = st.columns(4) 
-    # using Postimages to host the file on platforms to get direct links, aka raw image links
+    # using imgur to host the file on platforms to get direct links, right click, copy image address
     
     with col1:
-        st.image("https://i.postimg.cc/zX3KtqPz/Self-love-quote.jpg", use_container_width=True)
-        st.image("https://i.postimg.cc/xT32KpbC/thomas-gibson.jpg", use_container_width=True)
+        st.image("https://i.imgur.com/UKOR57o.jpeg", use_container_width=True)
+        st.image("https://i.imgur.com/vYzqlnD.jpeg", use_container_width=True)
 
     with col2:
-        st.image("https://i.postimg.cc/QN1sFf1J/Essas-vaquinhas-peludas-va-o-te-fazer-explodir-de-tanta-fofura.jpg", use_container_width=True)
-        st.image("https://i.postimg.cc/J0GxX3NC/48edb25c-3772-4990-ac7f-9b43609409bd.jpg", use_container_width=True)
-        st.image("https://i.postimg.cc/50szYSqk/Cute.jpg", use_container_width=True)
+        st.image("https://i.imgur.com/bslgqKv.jpeg", use_container_width=True)
+        st.image("https://i.imgur.com/ejPzNoW.jpeg", use_container_width=True)
+        st.image("https://i.imgur.com/HYeg3mT.jpeg", use_container_width=True)
 
     with col3:
-        st.image("https://i.postimg.cc/BnvXMphd/3c95632c-5ee5-46e5-8d54-05c1367f1366.jpg", use_container_width=True)
+        st.image("https://i.imgur.com/hTkOGfy.jpeg", use_container_width=True)
         st.image("https://i.postimg.cc/8zLnXdjm/giraffe.jpg", use_container_width=True)
 
     with col4: #video import using imagekit to convert downloaded MP4 into a direct link
