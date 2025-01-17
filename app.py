@@ -81,4 +81,5 @@ else:
        st.session_state.page = "Master_Spreadsheet"
        Master_Spreadsheet.display_Master_Spreadsheet_panel()
 
+
    show_logout_button()
