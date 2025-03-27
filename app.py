@@ -1,9 +1,8 @@
 import streamlit as st
 from login import login, load_users
 import Home 
-import admin
-import Test_Date_1
-import Test_Date_2
+import Admin
+import Test_Date
 import Master_Spreadsheet
 
 # Initialize session state variables if not already set
@@ -26,9 +25,8 @@ def show_login_form():
            st.session_state.logged_in = True
            st.session_state.username = username
 
-
            # Set the user's role in session_state
-           users = load_users()  # Assuming this loads the user data
+           users = load_users()  
            if username in users:
                st.session_state.role = users[username]["role"]
 
@@ -46,7 +44,7 @@ def show_logout_button():
        st.session_state.role = None  # Clear the user role
        st.rerun()
 
-# Main app logic
+# Main app 
 if not st.session_state.logged_in:
    show_login_form()
 else:
@@ -58,8 +56,7 @@ else:
            "🏠 Home",
            "🛠️ Admin",
            "📊 Master Spreadsheet",
-           "📅 Test Date 1",
-           "📅 Test Date 2"
+           "📅 Test Date",
        ],
        key="radio1"
    )
@@ -69,17 +66,13 @@ else:
        st.session_state.page = "home"
        Home.display_Home_panel()
    elif page_selection == "🛠️ Admin":
-       st.session_state.page = "admin"
-       admin.display_admin_panel()
-   elif page_selection == "📅 Test Date 1":
-       st.session_state.page = "Test_Date_1"
-       Test_Date_1.display_Test_Date_1_panel()
-   elif page_selection == "📅 Test Date 2":
-       st.session_state.page = "Test_Date_2"
-       Test_Date_2.display_Test_Date_2_panel()
+       st.session_state.page = "Admin"
+       Admin.display_Admin_panel()
+   elif page_selection == "📅 Test Date":
+       st.session_state.page = "Test_Date"
+       Test_Date.display_Test_Date_panel()
    elif page_selection == "📊 Master Spreadsheet":
        st.session_state.page = "Master_Spreadsheet"
        Master_Spreadsheet.display_Master_Spreadsheet_panel()
-
 
    show_logout_button()
